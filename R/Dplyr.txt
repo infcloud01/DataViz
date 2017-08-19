@@ -1,0 +1,51 @@
+#load dplyr and filter
+require(dplyr)
+df = filter(dat, fuel.type == "gas")
+df
+
+#Slice rows
+df.slice = slice(df, 1:50)
+
+#random sample 50% of the data with sample_frac
+df.rand = sample_frac(df.slice, 0.5)
+df.rand
+
+#Arrange by ascending values in columns
+df2.arrange = arrange(df2.rand, fuel.type, price)
+df2.arrange
+
+#Standard deviation with sd
+require(dplyr)
+summarise(dat, sd.arr.delay = sd(ArrDelay, na.rm = TRUE))
+
+#Count columns
+count (dat, body.style, num.of.cylinders)
+
+#Chain commands on data frames
+df.chain = dat %>%
+filter (fuel.type == 'gas') %>%
+select (price, fuel.type, city.mpg, highway.mpg) %>%
+arrange (highway.mpg, price)
+df.chain
+
+#group_by function with chaining and summarise
+df.group = dat %>% group_by(fuel.type) %>%
+summarise (count = n(), mean.price = mean(price, na.rm = TRUE), sd.price = sd(price, na.rm = TRUE), min.price = min(price, na.rm = TRUE), max.price = max(price, na.rm = TRUE))
+df.group
+
+#Summarise function with min()
+summarise(dat, min.price = min(price, na.rm = TRUE))
+
+#Mutate function
+df4 = mutate(dat, curb.weight.kg = curb.weight / 2.205, weight.horsepower = curb.weight / horsepower)
+select(df4, curb.weight, curb.weight.kg, weight.horsepower)
+#Chain group_by and summarise function
+df5 = dat %>% filter(fuel.type == "gas") %>% group_by(city.mpg) %>%
+summarise (count = n(), mean.weight = mean(curb.weight), sd.weight = sd(curb.weight, na.rm = TRUE), min.weight = min(curb.weight), max.weight = max(curb.weight)) 
+df5
+
+
+
+
+
+

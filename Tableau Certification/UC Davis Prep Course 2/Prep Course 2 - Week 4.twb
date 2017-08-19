@@ -1,0 +1,1488 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0328.0755                               -->
+<workbook source-build='10.2.1 (10200.17.0328.0755)' source-platform='win' version='10.2' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='PrepCourse2-Week4' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Superstore dataset (Sales-Superstore-Dataset)' inline='true' name='federated.0r3hofj0oa5413167hkle0vh6y8o' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sales-Superstore-Dataset' name='excel-direct.1v8viwh1us0ijp10l4hoj0incacg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/206404804/Dropbox (Personal)/Data Science/Tableau Certification/UC Davis Prep Course 2/Sales-Superstore-Dataset.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1v8viwh1us0ijp10l4hoj0incacg' name='Superstore dataset' table='[&apos;Superstore dataset$&apos;]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='string' name='Category' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+            <column datatype='string' name='Customer Name' ordinal='3' />
+            <column datatype='string' name='Manufacturer' ordinal='4' />
+            <column datatype='date' name='Order Date' ordinal='5' />
+            <column datatype='string' name='Order ID' ordinal='6' />
+            <column datatype='integer' name='Postal Code' ordinal='7' />
+            <column datatype='string' name='Product Name' ordinal='8' />
+            <column datatype='string' name='Region' ordinal='9' />
+            <column datatype='string' name='Segment' ordinal='10' />
+            <column datatype='date' name='Ship Date' ordinal='11' />
+            <column datatype='string' name='Ship Mode' ordinal='12' />
+            <column datatype='string' name='State' ordinal='13' />
+            <column datatype='string' name='Sub-Category' ordinal='14' />
+            <column datatype='real' name='Discount' ordinal='15' />
+            <column datatype='integer' name='Number of Records' ordinal='16' />
+            <column datatype='integer' name='Profit' ordinal='17' />
+            <column datatype='real' name='Profit Ratio' ordinal='18' />
+            <column datatype='integer' name='Quantity' ordinal='19' />
+            <column datatype='integer' name='Sales' ordinal='20' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Manufacturer]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Manufacturer</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit Ratio]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Profit Ratio</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Superstore dataset]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U9995:no:A1:U9995:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+      <column datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:/Users/206404804/Dropbox (Personal)/Data Science/Tableau Certification/UC Davis Prep Course 2/Prep Course 2 - Week 4.tde' schema='Extract' tablename='Extract' update-time='05/29/2017 01:24:48 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='9994' timestamp-start='2017-05-29 01:24:48.722' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Furniture&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Technology&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>531</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Aberdeen&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Yuma&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>9</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;United States&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;United States&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;United States&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>793</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Aaron Bergman&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Zuschuss Donatelli&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>11</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Discount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discount</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.80000000000000004</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>14</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Manufacturer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Manufacturer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Manufacturer</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>174</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;3D Systems&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Zebra&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Date</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1238</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='date'>#2011-01-04#</statistic>
+                <statistic aggregation='Max' datatype='date'>#2014-12-31#</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+                <statistic aggregation='Median' datatype='date'>#2013-06-27#</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order ID</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5009</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;CA-2011-100006&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;US-2014-169551&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>13</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Postal Code</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Postal Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Postal Code</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>631</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>551572652.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>55190.379427656597</statistic>
+                <statistic aggregation='Min' datatype='integer'>1040</statistic>
+                <statistic aggregation='Max' datatype='integer'>99301</statistic>
+                <statistic aggregation='Stdev' datatype='real'>32063.693350364487</statistic>
+                <statistic aggregation='StdevP' datatype='real'>32062.089163078908</statistic>
+                <statistic aggregation='Var' datatype='real'>1028080431.2662077</statistic>
+                <statistic aggregation='VarP' datatype='real'>1027977561.501222</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>40715111695442.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>10</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Name</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1841</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;\&quot;While you Were Out\&quot; Message Book, One Form per Page&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Zipper Ring Binder Pockets&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>12</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit Ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit Ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit Ratio</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>161</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>-2.75</statistic>
+                <statistic aggregation='Max' datatype='real'>0.5</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>16</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>755</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>286347.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>28.65189113468081</statistic>
+                <statistic aggregation='Min' datatype='integer'>-6600</statistic>
+                <statistic aggregation='Max' datatype='integer'>8400</statistic>
+                <statistic aggregation='Stdev' datatype='real'>234.25571201136745</statistic>
+                <statistic aggregation='StdevP' datatype='real'>234.24399190069036</statistic>
+                <statistic aggregation='Var' datatype='real'>54875.738609952721</statistic>
+                <statistic aggregation='VarP' datatype='real'>54870.247741570696</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>556577639.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>17</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>37873.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>3.7895737442465478</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>14</statistic>
+                <statistic aggregation='Stdev' datatype='real'>2.2251096911413999</statistic>
+                <statistic aggregation='StdevP' datatype='real'>2.2249983660786095</statistic>
+                <statistic aggregation='Var' datatype='real'>4.9511131376113768</statistic>
+                <statistic aggregation='VarP' datatype='real'>4.9506177290524809</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>192999.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>15</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Central&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;West&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1148</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>2297354.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>229.87332399439663</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>22638</statistic>
+                <statistic aggregation='Stdev' datatype='real'>623.24894563615851</statistic>
+                <statistic aggregation='StdevP' datatype='real'>623.2177637001472</statistic>
+                <statistic aggregation='Var' datatype='real'>388439.24823658331</statistic>
+                <statistic aggregation='VarP' datatype='real'>388400.38099141256</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4409773808.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>18</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Segment</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Consumer&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Home Office&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Ship Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Date</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1334</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='date'>#2011-01-08#</statistic>
+                <statistic aggregation='Max' datatype='date'>#2015-01-06#</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ship Mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Mode</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;First Class&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Standard Class&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>49</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Alabama&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Wyoming&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>7</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub-Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub-Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub-Category</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Superstore dataset</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Accessories&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Tables&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>9994</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.670157' measure-ordering='alphabetic' measure-percentage='0.329843' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Central&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;West&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;South&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;East&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Product Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore dataset (Sales-Superstore-Dataset)' name='federated.0r3hofj0oa5413167hkle0vh6y8o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r3hofj0oa5413167hkle0vh6y8o'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk]' direction='ASC' using='[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]' />
+          <sort class='computed' column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]' direction='ASC' using='[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]' />
+          <filter class='quantitative' column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]' included-values='in-range'>
+            <min>504</min>
+          </filter>
+          <slices>
+            <column>[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]</rows>
+        <cols>[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sales Regional Comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore dataset (Sales-Superstore-Dataset)' name='federated.0r3hofj0oa5413167hkle0vh6y8o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r3hofj0oa5413167hkle0vh6y8o'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk]' direction='DESC' using='[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]' />
+          <filter class='categorical' column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]'>
+            <groupfilter function='level-members' level='[none:Sub-Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]' direction='DESC' using='[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]' />
+          <slices>
+            <column>[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]</rows>
+        <cols>([federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk] / [federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Product Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0r3hofj0oa5413167hkle0vh6y8o].[sum:Sales:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk]</field>
+            <field>[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sales Regional Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Region:nk]</field>
+            <field>[federated.0r3hofj0oa5413167hkle0vh6y8o].[none:Sub-Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Product Sales' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sales Regional Comparison' width='192'>
+      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
+      eScAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

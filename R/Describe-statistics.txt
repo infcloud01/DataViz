@@ -1,0 +1,14 @@
+#Cell 1
+describe = function(df, col){
+tmp = df[, col]
+sumry = summary(tmp)
+nms = names(sumry)
+nms = c(nms, 'std')
+out = c(sumry, sd(tmp))
+names(out) = nms
+out
+}
+
+
+#Cell 2
+describe(dat, 'ArrDelay')

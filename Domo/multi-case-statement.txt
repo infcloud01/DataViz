@@ -1,0 +1,23 @@
+case
+when `Service Category` in ('Database Services') AND `Server Type :` in ('Physical') then 12 * `Quantity`
+when `Server Type :` in ('Virtual') AND `Service Category` in ('Database Services') then 10 * `Quantity`
+when `Server Type :` in ('Virtual (Compute Only)') then 5 * `Quantity`
+when `Server Type :` in ('Physical') then 7 * `Quantity`
+when `Service Category` in ('Storage Services') then 0
+else 5 * `Quantity`
+end
+
+`Quantity` * 3.75 + `Quantity` * .25 +
+(CASE
+when `Shared Disk :` in ('NFS') then 1
+else 0
+end
+) + (CASE
+ when `Datacenter Location` like '%DMZ%' then 1
+ else 0
+ end
+) + (case
+when `Server Type :` in ('Physical') AND `Service Category` in ('Database Services') then 5
+when `Server Type :` in ('Virtual') AND `Service Category` in ('Database Services') then 1.5
+else 0
+end) / `Quantity`

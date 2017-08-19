@@ -1,0 +1,6 @@
+IF ISNULL([Due date])
+THEN "No Date Given"
+ELSE STR(DATEPART('month',[Due date]))
++"/"+STR(DATEPART('day',[Due date]))
++"/"+RIGHT(STR(DATEPART('year',[Due date])),2)
+END

@@ -1,0 +1,3 @@
+library("AzureML")
+ws <- workspace()
+dat <- download.datasets(ws, "autos.csv")

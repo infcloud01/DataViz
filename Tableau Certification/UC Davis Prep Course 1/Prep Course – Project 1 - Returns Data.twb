@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0328.0755                               -->
+<workbook source-build='10.2.1 (10200.17.0328.0755)' source-platform='win' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Orders-and-Returns-Superstore-Sales' inline='true' name='federated.1m1e2qn0x4q5el128w8xn1uupxv5' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Orders-and-Returns-Superstore-Sales' name='excel-direct.0pomxuj0tsbc751go8d4s1nikcxs'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/206404804/Dropbox (Personal)/Data Science/Tableau Certification/UC Davis Prep Course 1/Orders-and-Returns-Superstore-Sales.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0pomxuj0tsbc751go8d4s1nikcxs' name='Returns' table='[Returns$]' type='table'>
+          <columns gridOrigin='A1:B573:no:A1:B573:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Order ID' ordinal='0' />
+            <column datatype='string' name='Status' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B573:no:A1:B573:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Order ID]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.596859' measure-ordering='alphabetic' measure-percentage='0.403141' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders-and-Returns-Superstore-Sales' name='federated.1m1e2qn0x4q5el128w8xn1uupxv5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m1e2qn0x4q5el128w8xn1uupxv5'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Order ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order ID]' derivation='Sum' name='[sum:Order ID:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1m1e2qn0x4q5el128w8xn1uupxv5].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m1e2qn0x4q5el128w8xn1uupxv5].[sum:Order ID:qk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='127'>
+      iVBORw0KGgoAAAANSUhEUgAAAH8AAADACAYAAAAtIbyzAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAIV0lEQVR4nO3df0zU9x3H8dfJcAhTJ7AKMekc6Tq9m8q3irSmYy5LiW2XeemMs2DBmW5X
+      Sd3cYl1WEsXOzcQ2rWTRBiso1m7+iHV14XRLaadWDEx+aVFucZXSRWDqAaXcfXPn+dkf4P0C
+      Dtcd8L2+X4+EBL7fz335XJ7cD/65t0kppUAiTZroDdDEYXzBGF8wxheM8QVjfMEYXzDGj8Dl
+      ck30FsYU4wvG+IIxvmCMLxjjC8b4gjG+YIwvGOMLxviCMb5gjC8Y4wvG+IIxvmCMLxjjC8b4
+      gjG+YIwvGOMLxviCMb5gjC8Y4wvG+IIx/ng6uhImkynoy4KSFgAtJbCEHDdhcv6fB27jbsWB
+      woVITTTBZEpEas4mnL4Zpf0oGlF/f39Ur+fYtkjlHR993Ydblqg1VR6llFLHC+aovN1n1ccu
+      pZSnV10szVVff/avUdnPl6L0N0T3oK1tMr5pHX3dK+es2FISDwB4cu9FWOPjB89Mw7x1hdDy
+      e6OyH4M/7fugdzTj5IFSbN5Qgaawc59eOoztG9fDZrNhffEunLza7z/bVGGD7ZcHcdkXdkm9
+      FruLbLBVNGF89aK9fRYsltFXduf/DLMHv4/3hweAmzi9qQLT8nKjsiNjx++sxp6DrUh5zIbl
+      88PO9Z7FG8dNsBa/irKy3Xj5+QW4trcStfrdBdmw5nahwRFaX2+uh+c7SzFrPPYfogtdXUex
+      cvA1PTF1IVbsaYY3fJm3BsVrpg+5tbejGptynkKV9RAqrUPPfx7Gjp+Wi5+/8GMsTk9AXPi5
+      9jboWTmYOyMeQBwS0h/FD5ZMgrMnsCRdM6OrwYFAfh3N9R5kal8dj92HeRDFTQpKKSjlQWfd
+      7zCn8kf4xfuhq3rf2oGssFu6L5Tgh2vP4sm3z2DHd1OjtiNjx4/E/DAy6uyo6/Zi4OXhA5xq
+      y4CWFrQmTYO5qwH+B7/ejHpPJiakfYh4TMtYhm0bHkJNzT+DjrfgtTdmhC5t24lVrz2IihMl
+      iGJ3AEDsvuGLm4OnN3qx/6XnUd4DJMz8Hp799SqkhSxKQ3amE3aHD2ZzHPTmeiB7Labj/SGX
+      G+lTOPr6+qKz3ys78czOmdi43YoFyVPg/ve72PrbBiz9Q7r/d3j/th1nHv9NyO98r+QEsl58
+      B1/R+9Cnj3Txzykq/zOMg8byctUYfOCzRrWv9Ji67PQopW4r9/VatW/HAXXRHbb+1ruq9M0W
+      dVvdVo3lu1SNWynVYVdbyxvDf8UQ0f1Xz6WuVBaoh1KmKAAqfto8VfDWVeXxn7+mdix5Qu3r
+      Cb6NQ21bAAWEfZm3qA+jsKOYfeTfOFeFOznFmDv4LJmQvhjLvn0K9lZgXmbQwmQNFqcdDq8H
+      DbqGvIQJ2S6AKZhTUIn6gsoRzs/GC+eqwo4NvE8oHqMdxexrfvL9Gfjk79X4V//A+2Vv9xXU
+      NNxBSvKQldAsTvzjcB10TcOEtTcgYz/ymypge7028HPtwPfZ68qwNnMlfurch4riY/jE7cPk
+      qbOx+On1yLt/6GWSNQs6jzmwdAXTBzMpxY9cH4nL5UJiYuJEb2PMxOzTPv3/GF8wY7/mG9zy
+      Fw9N9Bb+J+/8flXIz3zkC8b4gjG+YIwvGOMLxviCMb5gjC8Y4wvG+IIxvmCMLxjjC8b4gjG+
+      YIwvGOMLxviCMb5gjC8Y4wvG+IIxvmCMLxjjC8b4gjG+YIwvGOMLxviCMb5gjC8Y4wvG+IIx
+      vmCMLxjjC8b4gjG+YIwvGOMLxviCMb5gjC+YweNHGqoIwHcL9W9uw4YiG2xFG7C54gLuzpo0
+      3lBF4zH2p253VmPPwW48vNqG5bf/GHbSh9YjL+NUUiG2lM7FjEk6bv2nH1/2nw8MVTSbA1P5
+      /EMV3eN0HwzM2I/8SEMV9Qt4z/EInnlqLgbmKiYgJT0lZIaOsYYqGo+x40fS9hH6FmVhmJE6
+      AYYdqmgMxn7aj0R3487103h1cy2udrnhm5yK+U/8BGsefwBJ/kUGGqpoAOH3JXbjA8B9WVid
+      vwL3JcXDp3fg3N5dOH55K1YHvcYnaxY47Q74zN9Cawug5SUAPUMvNdwgJZfLhalTp47lPRhX
+      4fcldp/2v5GB6Z95kJI0MGI8LiEdOY9m4KOPb4SuS9ZgcTbA4b2EBl2DxulqfrEbf3oWtE+P
+      4khTN7wAfHoHznzQgQWWtLCFHKo4EmM/7UccqpiERwrz0bP/Ffzq9ZvwTZkJi/U5PMehiveM
+      QxUjGG2oIqdrUcxifMEYXzDGF4zxBWN8wRhfMMYXjPEFY3zBGF8wxheM8QVjfMEYXzDGF4zx
+      BWN8wRhfMMYXjPEFY3zBGF8wxheM8QVjfMEYXzDGF4zxBWN8wRhfMMYXjPEFY3zBGF8wxheM
+      8QVjfMEYXzDGF4zxBWN8wRhfMMYXjPEFY3zBGF8wxhfM4PFHmag5SL+0HxttNgQPyeREzdEZ
+      O35nNfYcbEXKYzYsnz/CGt812E94sPT7s8JOBCZqBvNP1ByTDccWY8ePNFETAODD9ZNv4+ay
+      fCwaZgIaJ2pGZuz4o3GexZH2JchfmDT8eU7UjMjY07Ui6sf5Q5eRXViEJADDz73kRM1gX5iJ
+      mnrTUTSaV6FohAf9XZyoGRB+X2I0/g2cqTqP5vbzsP0p+LgNtdnrULY2M3AoWYPFaYfD60GD
+      riGPo/X8YjT+15BbXIbcoCOdJ1+CPX0zgrsPGJio+ZfDddC1Ak7UDGLs+BEnat77ZThRc3ic
+      qBkBJ2rSFxbjC8b4gjG+YIwvGOMLxviCMb5gjC8Y4wvG+IIxvmCMLxjjC8b4gjG+YIwvGOML
+      xviCMb5gjC8Y4wvG+IIxvmCMLxjjC8b4gjG+YIwv2H8B60QxXILaZWMAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
